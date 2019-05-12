@@ -1,0 +1,8 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: BLACKCAT-PLAT
+  instance:
+    instance-id: blackcat-plat-8001.com #起个名字
+    prefer-ip-address: true
