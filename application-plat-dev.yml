@@ -6,3 +6,8 @@ spring:
   instance:
     instance-id: blackcat-plat-8001.com #起个名字
     prefer-ip-address: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///blackcat-plat?useSSL=false&useUnicode=true&characterEncodeing=utf8
+    username: root
+    password: root
