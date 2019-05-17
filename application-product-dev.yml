@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: BLACKCAT-PRODUCT
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///blackcat-product?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+mybatis-plus:
+  type-aliases-package: cn.itsource.blackcat.domain,cn.itsource.blackcat.query
