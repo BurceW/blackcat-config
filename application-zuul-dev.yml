@@ -4,8 +4,8 @@ spring:
   application:
     name: BLACKCAT-ZUUL-GATEWAY
 zuul:
-  ignored-services: "*"  #用*来通配符，忽略从9527端口通过服务名来调用
-  prefix: "/services"    #这是所有路径的前缀
+  ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
+  prefix: "/services" #这是所有路径的前缀
   routes:
     plat:
       path: /plat/**
@@ -13,3 +13,7 @@ zuul:
     product:
       path: /product/**
       service-id: blackcat-product
+blackcat-product:
+  ribbon:
+	ConnectTimeout: 1000
+	ReadTimeout: 5000
