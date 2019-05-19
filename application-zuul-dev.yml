@@ -13,7 +13,7 @@ zuul:
     product:
       path: /product/**
       service-id: blackcat-product
-	common:
+    common:
       path: /common/**
       service-id: blackcat-common
 blackcat-product:
